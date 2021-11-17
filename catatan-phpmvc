@@ -1,0 +1,20 @@
+1. Membuat plan folder php mvc yang terdiri dari main folder public dan app.
+2. Di dalam folder app digunakan untuk menyimpan folder config,controller, core, views, models, ,htacces, init, 
+3. Di dalam folder public digunakan untuk menyimpan folder css, image, js, init, index.
+=========================================================================================
+4. folder config digunakan untuk menyimpan setiggan database seperti dbhost, dbname, dbpassword dan lainnya.
+5. folder core digunakan untuk menyimpan class utama yang digunakan seperti App.php yang digunakan untuk parsing url, menyimpan Controller.php yang digunakan
+  untuk mengatur folder controller, selain controller juga terdapat class untuk setting database.
+
+6. folder models digunakan untuk pemodelan seperti hapus, tambah, menampilkan database, update data ( CRUD ).
+7. folder views digunakan untuk mengatur views dari controoler, setiap controllers memiliki satu view.
+8. folder controllers  digunakn untuk mengontrol apa yang akan ditampilakn di index, seperti home, about, kontak, dll.
+=================================+++++========================================================
+
+9. init.php (app) digunakan untuk merequire folder yang terdapat di app! contonya require core/Controller.php, core/App.php, config/config.php
+   yang nantinya file init.php (app) ini akan ditangkap oleh init.php (public).
+10. init.php (public) digunakan untuk menangkap atau require ke init.php (app) dan di instansiasi file utama nya seperti class Controller (app).
+
+===============================================================================================
+11. .htaccess digunakan untuk mencegah user atau client jahat masuk ke folder atau direktori kita. Selain itu digunakan untuk meredirect halaman satu dengan halaman 
+    lainnya.
