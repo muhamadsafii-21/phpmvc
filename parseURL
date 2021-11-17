@@ -50,3 +50,20 @@ class App{
 		}
 	}
 }
+
+
+/* 
+1. Kode di baca dari atas dimana kita membuat properti untuk menyimpan url default, apabila user tidak mengakses direktori lain maka akan default membuka halaman
+   default yakni home. Home di katakan controller, index.php dikatakan method, dan paramater tambahan berupa data.
+
+2. setelah itu cek apa kan file  yang di masukkan ke url itu terdapat di folder controller? Apabila tidak ada maka akan membuka controller home, namun apabila ada
+  maka akan diredirect ke controller tujuan. Setelah di cek maka akan di require dan di instansiasi. controller terletak di array [0].
+
+3. setelah controller tersedia, maka akan cek apakah method juga tersedia? apabila tidak tersedia maka akan membuka method default yakni index dari setiap controller.
+
+4. setelah mengecek semuanya, maka akan cek apakah ada paramater yang dimasukkan. Apabila ada maka akan di tangkap dan di tampilkan.
+
+5. Setelah semuanya selesai pengecekan, maka controller, method, dan param akan di panggil menggunakan function call_use_func_array().
+
+
+*/
